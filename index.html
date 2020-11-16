@@ -1,305 +1,430 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Template Site | Easy Does It! </title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/cdf97e27ed.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-      <a href="/" class="navbar-brand">Template Navigation</a>
 
-<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bootstrap Template Site | Easy Does It! </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+	<script src="https://kit.fontawesome.com/cdf97e27ed.js" crossorigin="anonymous"></script>
+
+
+	<script>
+		//function for displaying values
+function dis(val)
+{
+document.getElementById("edu").value+=val
+ }
+//function for evaluation
+function solve()
+{
+let x = document.getElementById("edu").value
+let y = eval(x)
+document.getElementById("edu").value = y
+}
+//function for clearing the display
+function clr()
+{
+document.getElementById("edu").value = ""
+}
+	</script>
+
+	<link rel="stylesheet" href="main.css">
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-light bg-light navbar-expand-sm">
+		<a href="/" class="navbar-brand">Template Navigation</a>
+
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
 data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Togglenavigation">
 <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 
 
-      <ul class="navbar-nav mr-auto">
-        <li class="active nav-item mr-2">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item mr-2">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Select your player
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
-    <a class="dropdown-item" href="#">Mario</a>
-    <a class="dropdown-item" href="#">Luigi</a>
-    <a class="dropdown-item" href="#">Bowser</a>
-    <a class="dropdown-item" href="#">Peach</a>
-    </div>
-    </li>
+			<ul class="navbar-nav mr-auto">
+				<li class="active nav-item mr-2">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li class="nav-item mr-2">
+					<a class="nav-link" href="/about">About</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select your player
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
+						<a class="dropdown-item" href="#">Mario</a>
+						<a class="dropdown-item" href="#">Luigi</a>
+						<a class="dropdown-item" href="#">Bowser</a>
+						<a class="dropdown-item" href="#">Peach</a>
+					</div>
+				</li>
 
 
-        <li class="nav-item mr-2 d-block d-sm-none">
-          <a class="nav-link" href="/login">Sign in / Sign up</a>
-        </li>
-      </ul>
-      </div>
-      <div class="d-none d-md-block">
-        <p class="navbar-text my-auto mr-2">
-          <i>Great whisky delivered to your door!</i>
-        </p>
-        <a href="/login">Sign in / Sign up</a>
-      </div>
-    </nav>
+				<li class="nav-item mr-2 d-block d-sm-none">
+					<a class="nav-link" href="/login">Sign in / Sign up</a>
+				</li>
+			</ul>
+		</div>
+		<div class="d-none d-md-block">
+			<p class="navbar-text my-auto mr-2">
+				<i>Great mathematics!</i>
+			</p>
+			<a href="/login">Sign in / Sign up</a>
+		</div>
+	</nav>
 
-    <article class="container mt-4">
-      <div class="row d-none d-sm-block">
-        <div class="col-12">
-          <div class="alert alert-warning">
-            <strong>Lettttssa Go!</strong> Its'a me!
-            <a href="/">See here for deets</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <section class="callout jumbotron text-center">
-            <h1>The finest whiskeys delivered to your doorstep</h1>
-            <p class="lead">
-              Sign up today to start receiving the world's best whiskeys every
-              month. <s class="d-none d-sm-inline">€19.99</s>
-              <span class="d-inline d-sm-none"><br /></span>
-              <strong><mark>First one is free!</mark></strong>
-            </p>
-            <p class="text-muted">
-              <small
-                >You must be over 18 to sign up to our service. Please drink
-                responsibly</small
-              >
-            </p>
-            <p><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">Sign up!</button></p>
-          </section>
-        </div>
-      </div>
-      <hr />
+	<article class="container mt-4">
+		<div class="row d-none d-sm-block">
+			<div class="col-12">
+				<div class="alert alert-warning">
+					<strong>Lettttssa Go!</strong> Its'a me!
+					<a href="/">See here for deets</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid callout-container">
+			<div class="opaque-overlay">&nbsp;</div>
+			<div class="row">
+				<div class="col-12">
+					<section class="callout jumbotron text-center">
+						<h1>Best calculator in all the internets</h1>
+						<p class="lead">
+							Sign up today to start receiving the world's best sums. <s
+								class="d-none d-sm-inline">€19.99</s>
+							<span class="d-inline d-sm-none"><br /></span>
+							<strong><mark>First sum is free!</mark></strong>
+						</p>
+						<p class="text-muted">
+							<small
+                >You must be over 18 to sign up to our service. Please multiply
+                responsibly</small>
+						</p>
+						<p><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">Sign up!</button>
+						</p>
+					</section>
+				</div>
+			</div>
+		</div>
+		<hr />
 
-      <section class="blockquote">
-        <div class="row">
-          <div class="col-12 my-5">
-            <h2 class="text-uppercase">Quotes:</h2>
-          </div>
-        </div>
+		<section class="blockquote">
+			<div class="row">
+				<div class="col-12 my-5">
+					<h2 class="text-uppercase">Quotes:</h2>
+				</div>
+			</div>
 
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="media">
-              <div class="d-none d-sm-block d-snm-mt-5">
-                <img
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="media">
+						<div class="d-none d-sm-block d-snm-mt-5">
+							<img
                   src="https://gamespot1.cbsistatic.com/uploads/screen_kubrick/1595/15950357/3723602-luigi%27smansion3.jpg"
                   class="rounded-circle mr-5"
                   height="150"
                   width="150"
                 />
               </div>
-              <div class="media-body">
-                <blockquote class="quote">
-                  <p>
-                    I've been introduced to 10 great international new whiskeys
-                    I never knew about
-                  </p>
-                  <p>- Luigi Plumber</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
+							<div class="media-body">
+								<blockquote class="quote">
+									<p>
+										I've been introduced to 10 great sums I never knew existed!
+									</p>
+									<p>- Luigi Plumber</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
 
-          <div class="col-12 col-md-6 d-none d-sm-block d-md-none">
-            <div class="media">
-              <br />
-              <br />
-              <br />
+					<div class="col-12 col-md-6 d-none d-sm-block d-md-none">
+						<div class="media">
+							<br />
+							<br />
+							<br />
             </div>
-          </div>
+						</div>
 
-          <div class="col-12 col-md-6">
-            <div class="media">
-              <div class="d-none d-sm-block">
-                <img
+						<div class="col-12 col-md-6">
+							<div class="media">
+								<div class="d-none d-sm-block">
+									<img
                   src="https://media.wired.com/photos/5926c126af95806129f50868/master/w_2560%2Cc_limit/SuperMarioRunTA.jpg"
                   class="rounded-circle mr-5"
                   height="150"
                   width="150"
                 />
               </div>
-              <div class="media-body">
-                <blockquote class="blockquote">
-                  <p>I haven't been sober in months!</p>
-                  <br />
-                  <p>-Mario Plumber</p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr />
+									<div class="media-body">
+										<blockquote class="blockquote">
+											<p>I can't remember how I used to make my calculations...</p>
+											<br />
+											<p>-Mario Plumber</p>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+		</section>
+		<hr />
 
-      <section class="features">
-        <div class="row">
-          <div class="col-12 my-5">
-            <h2 class="text-uppercase">Features:</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="feature">
-              <h3>
-                <i class="fas fa-gift d-none d-sm-block"></i> Feature 1
-                <span class="badge badge-success">NEW!</span>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-            </div>
-          </div>
 
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="feature">
-              <h3>
-                <i class="fas fa-credit-card d-none d-sm-block"></i> Feature 2
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-            </div>
-          </div>
 
-          <div class="col-12 d-md-none d-lg-block col-lg-4">
-            <div class="feature">
-              <h3>
-                <i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="row">
-          <h2 class="text-uppercase">
-            <i class="far fa-calendar-check"></i> MONTHLY FAVOURITES
-          </h2>
-        </div>
-        <div class="row">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Origin</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Jameson</td>
-                <td>Ireland</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Maker's Mark</td>
-                <td>Kentucky</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Glenfiddich</td>
-                <td>Scotland</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Bushmills</td>
-                <td>Ireland</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Ardbeg</td>
-                <td>Scotland</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </article>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sign up to Whiskey Drop!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+
+		<section class="features">
+			<div class="row">
+				<div class="col-12 my-5">
+					<h2 class="text-uppercase">Features:</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="feature">
+						<h3>
+							<i class="fas fa-gift d-none d-sm-block"></i> El Classico 
+							<span class="badge badge-success">NEW!</span>
+						</h3>
+						<section>
+
+							<div class=title>Mario Calculator</div>
+							<table border="1">
+								<tr>
+									<td><input type="button" value="c" onclick="clr()"/> </td>
+									<td colspan="3"><input type="text" id="edu"/></td>
+										<!-- clr() function will call clr to clear all value -->
+								</tr>
+								<tr>
+									<!-- creating buttons and assigning values-->
+									<td><input type="button" value="+" onclick="dis('+')"/> </td>
+									<td><input type="button" value="1" onclick="dis('1')"/> </td>
+									<td><input type="button" value="2" onclick="dis('2')"/> </td>
+									<td><input type="button" value="3" onclick="dis('3')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="-" onclick="dis('-')"/> </td>
+									<td><input type="button" value="4" onclick="dis('4')"/> </td>
+									<td><input type="button" value="5" onclick="dis('5')"/> </td>
+									<td><input type="button" value="6" onclick="dis('6')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="*" onclick="dis('*')"/> </td>
+									<td><input type="button" value="7" onclick="dis('7')"/> </td>
+									<td><input type="button" value="8" onclick="dis('8')"/> </td>
+									<td><input type="button" value="9" onclick="dis('9')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="/" onclick="dis('/')"/> </td>
+									<td><input type="button" value="." onclick="dis('.')"/> </td>
+									<td><input type="button" value="0" onclick="dis('0')"/> </td>
+										<!-- Evaluating function call eval()-->
+									<td><input type="button" value="=" onclick="solve()"/> </td>
+								</tr>
+							</table>
+						</section>
+
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="feature">
+						<h3>
+							<i class="fas fa-credit-card d-none d-sm-block"></i> Colour 2
+						</h3>
+						<section>
+
+							<div class=cal-2>Luigi Calculator</div>
+							<table border="1">
+								<tr>
+									<td><input type="button" value="c" onclick="clr()"/> </td>
+									<td colspan="3"><input type="text" id="edu"/></td>
+										<!-- clr() function will call clr to clear all value -->
+								</tr>
+								<tr>
+									<!-- creating buttons and assigning values-->
+									<td><input type="button" value="+" onclick="dis('+')"/> </td>
+									<td><input type="button" value="1" onclick="dis('1')"/> </td>
+									<td><input type="button" value="2" onclick="dis('2')"/> </td>
+									<td><input type="button" value="3" onclick="dis('3')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="-" onclick="dis('-')"/> </td>
+									<td><input type="button" value="4" onclick="dis('4')"/> </td>
+									<td><input type="button" value="5" onclick="dis('5')"/> </td>
+									<td><input type="button" value="6" onclick="dis('6')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="*" onclick="dis('*')"/> </td>
+									<td><input type="button" value="7" onclick="dis('7')"/> </td>
+									<td><input type="button" value="8" onclick="dis('8')"/> </td>
+									<td><input type="button" value="9" onclick="dis('9')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="/" onclick="dis('/')"/> </td>
+									<td><input type="button" value="." onclick="dis('.')"/> </td>
+									<td><input type="button" value="0" onclick="dis('0')"/> </td>
+										<!-- Evaluating function call eval()-->
+									<td><input type="button" value="=" onclick="solve()"/> </td>
+								</tr>
+							</table>
+						</section>
+
+					</div>
+				</div>
+
+				<div class="col-12 d-md-none d-lg-block col-lg-4">
+					<div class="feature">
+						<h3>
+							<i class="fas fa-times-circle d-none d-sm-block"></i> Colour 3
+						</h3>
+						<section>
+
+							<div class=cal-3>Mario Calculator</div>
+							<table border="1">
+								<tr>
+									<td><input type="button" value="c" onclick="clr()"/> </td>
+									<td colspan="3"><input type="text" id="edu"/></td>
+										<!-- clr() function will call clr to clear all value -->
+								</tr>
+								<tr>
+									<!-- creating buttons and assigning values-->
+									<td><input type="button" value="+" onclick="dis('+')"/> </td>
+									<td><input type="button" value="1" onclick="dis('1')"/> </td>
+									<td><input type="button" value="2" onclick="dis('2')"/> </td>
+									<td><input type="button" value="3" onclick="dis('3')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="-" onclick="dis('-')"/> </td>
+									<td><input type="button" value="4" onclick="dis('4')"/> </td>
+									<td><input type="button" value="5" onclick="dis('5')"/> </td>
+									<td><input type="button" value="6" onclick="dis('6')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="*" onclick="dis('*')"/> </td>
+									<td><input type="button" value="7" onclick="dis('7')"/> </td>
+									<td><input type="button" value="8" onclick="dis('8')"/> </td>
+									<td><input type="button" value="9" onclick="dis('9')"/> </td>
+								</tr>
+								<tr>
+									<td><input type="button" value="/" onclick="dis('/')"/> </td>
+									<td><input type="button" value="." onclick="dis('.')"/> </td>
+									<td><input type="button" value="0" onclick="dis('0')"/> </td>
+										<!-- Evaluating function call eval()-->
+									<td><input type="button" value="=" onclick="solve()"/> </td>
+								</tr>
+							</table>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+
+        <br>
+        <br>
+			<div class="row">
+				<h2 class="text-uppercase">
+					<i class="far fa-calendar-check"></i> MONTHLY FAVOURITES
+				</h2>
+			</div>
+			<div class="row">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Name</th>
+							<th scope="col">Origin</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Adding</td>
+							<td>Numbers</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Subtraction</td>
+							<td>Numbers</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Multiplication</td>
+							<td>Numbers</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>Division</td>
+							<td>Numbers</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>Long-division</td>
+							<td>Numbers</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</article>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Sign up to Whiskey Drop!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password">
   </div>
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" class="form-control" id="password">
+							<div class="form-group">
+								<label for="repeatPassword">Repeat Password</label>
+								<input type="password" class="form-control" id="repeatPassword">
   </div>
-  <div class="form-group">
-    <label for="repeatPassword">Repeat Password</label>
-    <input type="password" class="form-control" id="repeatPassword">
-  </div>
-  
-  <button type="submit" class="btn btn-success">Submit</button>
-</form>
-      </div>
-      
-    </div>
-  </div>
-</div>
+
+								<button type="submit" class="btn btn-success">Submit</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
 
 
 
-  </body>
+</body>
+
 </html>

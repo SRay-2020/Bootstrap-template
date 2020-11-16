@@ -1,0 +1,100 @@
+.callout-container {
+
+height:100vh;
+background: url("../images/maths1.jpg") no-repeat bottom right ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display:flex;
+  align-items: center;
+  justify-content:center;
+
+position: relative;
+
+}
+
+
+.title{
+border-radius: 10px;
+margin-bottom: 10px;
+text-align:center;
+width: 210px;
+color:#000000;
+border: solid black 1px;
+}
+input[type="button"]
+{
+border-radius: 10px;
+background-color:#94000f;
+color: black;
+border-color:#a10010 ;
+width:100%;
+}
+input[type="text"]
+{
+border-radius: 10px;
+text-align: right;
+background-color:white;
+border-color: black ;
+width:100%
+}
+
+
+.cal-2{
+border-radius: 10px;
+margin-bottom: 10px;
+text-align:center;
+width: 210px;
+color:#000000;
+border: solid black 1px;
+}
+input[type="button"]
+{
+border-radius: 10px;
+background-color:#00b309;
+color: black;
+border-color:#00a115 ;
+width:100%;
+}
+input[type="text"]
+{
+border-radius: 10px;
+text-align: right;
+background-color:white;
+border-color: black ;
+width:100%
+}
+
+
+.cal-3{
+border-radius: 10px;
+margin-bottom: 10px;
+text-align:center;
+width: 210px;
+color:#000000;
+border: solid black 1px;
+}
+input[type="button"]
+{
+border-radius: 10px;
+background-color:#94000f;
+color: black;
+border-color:#a10010 ;
+width:100%;
+}
+input[type="text"]
+{
+border-radius: 10px;
+text-align: right;
+background-color:white;
+border-color: black ;
+width:100%
+}
+
+
+
+
+
+
